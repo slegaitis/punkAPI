@@ -1,4 +1,4 @@
-Glofox Test by Tony Slegaitis
+Glofox Test by T Slegaitis
 
 To run:
 1) Clone / Fork repo
