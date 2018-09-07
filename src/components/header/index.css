@@ -1,7 +1,7 @@
 /* SET BASE FONTS FOR PXTO EM */
 /* MEDIA QUERIES */
 /* MAIN COLOURS */
-header {
+header#page-header {
   border-bottom: 1px solid #e5e7e9;
   padding: 20px;
   text-align: center; }
