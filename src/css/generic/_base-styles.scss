@@ -1,0 +1,343 @@
+body {
+	background-color: $bodycolour !important;
+	color: $darkBlue;
+	font: 400 toem(16px) $mainFont;
+	line-height: 1.5em;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: $wrapper-size;
+}
+
+button {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+}
+
+label {
+	color: $grey;
+	display: block;
+	font: 900 toem(12px) $mainFont;
+	letter-spacing: 0.05em;
+	margin: 0 0 5px;
+}
+
+input,
+textarea {
+	@extend %form-resets;
+	border: 2px solid $bodycolour;
+	font-size: toem(16px);
+	padding: 10px 15px;
+	outline: none;
+
+	&[readOnly] {
+		background: $bodycolour;
+		opacity: 0.5;
+	}
+}
+
+textarea {
+	border: 2px solid $bodycolour;
+	display: block;
+	margin: 30px auto;
+	min-height: 100px;
+	min-width: 100%;
+	max-height: 250px;
+	max-width: 100%;
+	width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	left: -5000px;
+	position: absolute;
+	top: -3000px;
+	visibility: hidden;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	cursor: pointer;
+	display: inline-block;
+	margin: 5px 0;
+	padding-left: 35px;
+	position: relative;
+
+	&:before {
+		border: 1px solid $grey;
+		content: '';
+		height: 15px;
+		left: 10px;
+		position: absolute;
+		top: 1px;
+		width: 15px;
+		z-index: 1;
+	}
+}
+
+input[type="checkbox"]:checked + label {
+	&:after {
+		background: $grey;
+		content: '';
+		height: 9px;
+		left: 14px;
+		position: absolute;
+		top: 5px;
+		width: 9px;
+		z-index: 2;
+	}
+}
+input[type="radio"] + label {
+	&:before {
+		border-radius: 50%;
+	}
+}
+
+input[type="radio"]:checked + label {
+	&:after {
+		background: $grey;
+		border-radius: 50%;
+		content: '';
+		height: 9px;
+		left: 14px;
+		position: absolute;
+		top: 5px;
+		width: 9px;
+		z-index: 2;
+	}
+}
+
+::selection {
+	background: lighten($blue, 35%);
+}
+
+::-moz-selection {
+	background: lighten($blue, 35%);
+}
+
+::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: rgba($blue, 0.7);
+}
+::-moz-placeholder {
+	/* Firefox 19+ */
+	color: rgba($blue, 0.7);
+}
+:-ms-input-placeholder {
+	/* IE 10+ */
+	color: rgba($blue, 0.7);
+}
+:-moz-placeholder {
+	/* Firefox 18- */
+	color: rgba($blue, 0.7);
+}
+
+p {
+	font: 400 toem(17px) $mainFont;
+	line-height: toem(25px, 17px);
+	margin: 0 0 15px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	@include transition(color, 0.6s, $transition);
+
+	&:active {
+		color: $darkBlue;
+	}
+
+	&:hover {
+		color: lighten($blue, 20%);
+	}
+}
+
+h1 {
+	font: 700 toem(20px) $mainFont;
+
+	@include breakpoint(tablet) {
+		font: 700 toem(25px) $mainFont;
+	}
+
+	@include breakpoint(desktop) {
+		font: 700 toem(30px) $mainFont;
+	}
+
+	@include breakpoint(xxl-desktop) {
+		font: 700 toem(33px) $mainFont;
+	}
+}
+
+h2 {
+	font: 700 toem(19px) $mainFont;
+
+	@include breakpoint(tablet) {
+		font: 700 toem(21px) $mainFont;
+	}
+
+	@include breakpoint(desktop) {
+		font: 700 toem(25px) $mainFont;
+	}
+
+	@include breakpoint(xxl-desktop) {
+		font: 700 toem(30px) $mainFont;
+	}
+}
+
+h3 {
+	font: 700 toem(17px) $mainFont;
+
+	@include breakpoint(tablet) {
+		font: 700 toem(18px) $mainFont;
+	}
+
+	@include breakpoint(desktop) {
+		font: 700 toem(19px) $mainFont;
+	}
+
+	@include breakpoint(xxl-desktop) {
+		font: 700 toem(20px) $mainFont;
+	}
+}
+
+h4 {
+	font: 700 toem(16px) $mainFont;
+
+	@include breakpoint(desktop) {
+		font: 700 toem(18px) $mainFont;
+	}
+
+	@include breakpoint(xxl-desktop) {
+		font: 700 toem(19px) $mainFont;
+	}
+}
+
+h5,
+h6 {
+	font: 700 toem(16px) $mainFont;
+}
+
+b,
+bold,
+strong {
+	font-weight: 700;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+hr {
+	border-top: 2px solid $bodycolour;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	height: 1px;
+	margin: 25px 0;
+}
+
+.btn {
+	background: $blue;
+	border: 1px solid $blue;
+	border-radius: 1px;
+	color: $white;
+	display: inline-block;
+	font-weight: 700;
+	font-size: toem(12px);
+	margin: 0 5px;
+	padding: 10px;
+	text-decoration: none !important;
+	@include transition(background, 0.6s, $transition);
+
+	@include breakpoint(tablet) {
+		font-size: toem(16px);
+		padding: 10px 20px;
+	}
+
+	&:hover {
+		background: none;
+		color: $blue;
+	}
+
+	&.follow {
+		border: 1px solid $blue;
+		padding: 5px 10px;
+		text-align: center !important;
+	}
+
+	&.sidebar-btn {
+		clear: both;
+		display: block;
+		font-size: 15px;
+		margin: 15px auto;
+		max-width: 150px;
+		padding: 5px 15px;
+		text-align: center;
+		width: 100%;
+	}
+
+	&.green {
+		background: $green;
+		border-color: $green;
+
+		&:hover {
+			background: none;
+			color: $green;
+		}
+	}
+
+	&.red {
+		background: $red;
+		border-color: $red;
+
+		&:hover {
+			background: none;
+			color: $red;
+		}
+	}
+
+	&.violet {
+		background: $violet;
+		border-color: $violet;
+
+		&:hover {
+			background: none;
+			color: $violet;
+		}
+	}
+
+	&.blue {
+		background: $darkBlue;
+		border-color: $darkBlue;
+
+		&:hover {
+			background: none;
+			color: $darkBlue;
+		}
+	}
+
+	&.gray {
+		background: $silver;
+		border-color: $silver;
+
+		&:hover {
+			background: none;
+			color: $grey;
+		}
+	}
+
+	&.disabled {
+		pointer-events: none;
+		opacity: 0.4;
+	}
+}

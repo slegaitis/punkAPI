@@ -1,0 +1,57 @@
+@import "../../css/_imports.scss";
+
+.featured-beer {
+	border-bottom: 1px solid darken($bodycolour, 5%);
+	margin: 0 auto 20px;
+	max-width: 400px;
+	padding: 20px 10px;
+	text-align: center;
+
+	h3 {
+		margin: 0 0 10px;
+		text-align: left;
+	}
+
+	img {
+		display: inline-block;
+		margin: 30px;
+		max-width: 100px;
+		max-height: 150px;
+		vertical-align: middle;
+	}
+
+	p {
+		display: inline-block;
+		font: 400 toem(15px) $mainFont;
+		margin-left: 10px;
+		text-align: left;
+		vertical-align: middle;
+		width: calc(100% - 110px);
+	}
+
+	@include breakpoint(tablet) {
+		@include group();
+		max-width: 800px;
+		padding: 30px 20px;
+		text-align: left;
+
+		& > h3,
+		img,
+		p {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		h3 {
+			width: 100%;
+		}
+
+		img {
+			max-width: 200px;
+		}
+
+		p {
+			width: calc(100% - 210px);
+		}
+	}
+}

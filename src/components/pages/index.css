@@ -1,0 +1,348 @@
+/* SET BASE FONTS FOR PXTO EM */
+/* MEDIA QUERIES */
+/* MAIN COLOURS */
+input,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  outline: none; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* CUSTOM RESETS */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* Clearfix */
+.group {
+  *zoom: 1; }
+  .group:before, .group:after {
+    content: "";
+    display: table; }
+  .group:after {
+    clear: both; }
+
+body {
+  background-color: #f3f4f5 !important;
+  color: #2e4057;
+  font: 400 1em "Nunito", sans-serif;
+  line-height: 1.5em; }
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px; }
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  outline: none; }
+
+label {
+  color: #61707d;
+  display: block;
+  font: 900 0.75em "Nunito", sans-serif;
+  letter-spacing: 0.05em;
+  margin: 0 0 5px; }
+
+input,
+textarea {
+  border: 2px solid #f3f4f5;
+  font-size: 1em;
+  padding: 10px 15px;
+  outline: none; }
+  input[readOnly],
+  textarea[readOnly] {
+    background: #f3f4f5;
+    opacity: 0.5; }
+
+textarea {
+  border: 2px solid #f3f4f5;
+  display: block;
+  margin: 30px auto;
+  min-height: 100px;
+  min-width: 100%;
+  max-height: 250px;
+  max-width: 100%;
+  width: 100%; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  left: -5000px;
+  position: absolute;
+  top: -3000px;
+  visibility: hidden; }
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px 0;
+  padding-left: 35px;
+  position: relative; }
+  input[type="checkbox"] + label:before,
+  input[type="radio"] + label:before {
+    border: 1px solid #61707d;
+    content: '';
+    height: 15px;
+    left: 10px;
+    position: absolute;
+    top: 1px;
+    width: 15px;
+    z-index: 1; }
+
+input[type="checkbox"]:checked + label:after {
+  background: #61707d;
+  content: '';
+  height: 9px;
+  left: 14px;
+  position: absolute;
+  top: 5px;
+  width: 9px;
+  z-index: 2; }
+
+input[type="radio"] + label:before {
+  border-radius: 50%; }
+
+input[type="radio"]:checked + label:after {
+  background: #61707d;
+  border-radius: 50%;
+  content: '';
+  height: 9px;
+  left: 14px;
+  position: absolute;
+  top: 5px;
+  width: 9px;
+  z-index: 2; }
+
+::selection {
+  background: #95bedc; }
+
+::-moz-selection {
+  background: #95bedc; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(47, 102, 144, 0.7); }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(47, 102, 144, 0.7); }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(47, 102, 144, 0.7); }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(47, 102, 144, 0.7); }
+
+p {
+  font: 400 1.0625em "Nunito", sans-serif;
+  line-height: 1.47059em;
+  margin: 0 0 15px; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: color 0.6s cubic-bezier(0.12, 0.84, 0.12, 0.84);
+  -moz-transition: color 0.6s cubic-bezier(0.12, 0.84, 0.12, 0.84);
+  -o-transition: color 0.6s cubic-bezier(0.12, 0.84, 0.12, 0.84);
+  transition: color 0.6s cubic-bezier(0.12, 0.84, 0.12, 0.84); }
+  a:active {
+    color: #2e4057; }
+  a:hover {
+    color: #5b9aca; }
+
+h1 {
+  font: 700 1.25em "Nunito", sans-serif; }
+  @media only screen and (min-width: 760px) {
+    h1 {
+      font: 700 1.5625em "Nunito", sans-serif; } }
+  @media only screen and (min-width: 1020px) {
+    h1 {
+      font: 700 1.875em "Nunito", sans-serif; } }
+  @media only screen and (min-width: 1500px) {
+    h1 {
+      font: 700 2.0625em "Nunito", sans-serif; } }
+
+h2 {
+  font: 700 1.1875em "Nunito", sans-serif; }
+  @media only screen and (min-width: 760px) {
+    h2 {
+      font: 700 1.3125em "Nunito", sans-serif; } }
+  @media only screen and (min-width: 1020px) {
+    h2 {
+      font: 700 1.5625em "Nunito", sans-serif; } }
+  @media only screen and (min-width: 1500px) {
+    h2 {
+      font: 700 1.875em "Nunito", sans-serif; } }
+
+h3 {
+  font: 700 1.0625em "Nunito", sans-serif; }
+  @media only screen and (min-width: 760px) {
+    h3 {
+      font: 700 1.125em "Nunito", sans-serif; } }
+  @media only screen and (min-width: 1020px) {
+    h3 {
+      font: 700 1.1875em "Nunito", sans-serif; } }
+  @media only screen and (min-width: 1500px) {
+    h3 {
+      font: 700 1.25em "Nunito", sans-serif; } }
+
+h4 {
+  font: 700 1em "Nunito", sans-serif; }
+  @media only screen and (min-width: 1020px) {
+    h4 {
+      font: 700 1.125em "Nunito", sans-serif; } }
+  @media only screen and (min-width: 1500px) {
+    h4 {
+      font: 700 1.1875em "Nunito", sans-serif; } }
+
+h5,
+h6 {
+  font: 700 1em "Nunito", sans-serif; }
+
+b,
+bold,
+strong {
+  font-weight: 700; }
+
+em,
+i {
+  font-style: italic; }
+
+hr {
+  border-top: 2px solid #f3f4f5;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  height: 1px;
+  margin: 25px 0; }
+
+.btn {
+  background: #2f6690;
+  border: 1px solid #2f6690;
+  border-radius: 1px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.75em;
+  margin: 0 5px;
+  padding: 10px;
+  text-decoration: none !important;
+  -webkit-transition: background 0.6s cubic-bezier(0.12, 0.84, 0.12, 0.84);
+  -moz-transition: background 0.6s cubic-bezier(0.12, 0.84, 0.12, 0.84);
+  -o-transition: background 0.6s cubic-bezier(0.12, 0.84, 0.12, 0.84);
+  transition: background 0.6s cubic-bezier(0.12, 0.84, 0.12, 0.84); }
+  @media only screen and (min-width: 760px) {
+    .btn {
+      font-size: 1em;
+      padding: 10px 20px; } }
+  .btn:hover {
+    background: none;
+    color: #2f6690; }
+  .btn.follow {
+    border: 1px solid #2f6690;
+    padding: 5px 10px;
+    text-align: center !important; }
+  .btn.sidebar-btn {
+    clear: both;
+    display: block;
+    font-size: 15px;
+    margin: 15px auto;
+    max-width: 150px;
+    padding: 5px 15px;
+    text-align: center;
+    width: 100%; }
+  .btn.green {
+    background: #49beaa;
+    border-color: #49beaa; }
+    .btn.green:hover {
+      background: none;
+      color: #49beaa; }
+  .btn.red {
+    background: #e85d75;
+    border-color: #e85d75; }
+    .btn.red:hover {
+      background: none;
+      color: #e85d75; }
+  .btn.violet {
+    background: #7d53de;
+    border-color: #7d53de; }
+    .btn.violet:hover {
+      background: none;
+      color: #7d53de; }
+  .btn.blue {
+    background: #2e4057;
+    border-color: #2e4057; }
+    .btn.blue:hover {
+      background: none;
+      color: #2e4057; }
+  .btn.gray {
+    background: #818b96;
+    border-color: #818b96; }
+    .btn.gray:hover {
+      background: none;
+      color: #61707d; }
+  .btn.disabled {
+    pointer-events: none;
+    opacity: 0.4; }

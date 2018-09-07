@@ -1,0 +1,71 @@
+@import "../../css/_imports.scss";
+
+.search {
+	border-bottom: 1px solid darken($bodycolour, 5%);
+	margin: 0 auto;
+	max-width: 500px;
+	padding: 20px 20px 40px;
+
+	h2 {
+		margin: 0 0 15px;
+	}
+
+	input[type="text"] {
+		display: block;
+		margin: 0 0 15px;
+		width: 100%;
+	}
+
+	button {
+		display: block;
+		margin: 15px 0;
+	}
+
+	.wrapper.search-results {
+		margin: 30px 0;
+	}
+
+	@include breakpoint(tablet) {
+		max-width: $wrapper-size;
+		text-align: center;
+
+		h2 {
+			clear: both;
+			margin: 0 0 30px;
+			text-align: left;
+		}
+
+		input[type="text"] {
+			display: inline-block;
+			margin: 0 15px 0 0;
+			vertical-align: middle;
+			width: 50%;
+		}
+
+		label {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		button {
+			display: inline-block;
+			margin: 0 0 0 15px;
+			vertical-align: middle;
+		}
+	}
+}
+
+.search-results {
+	padding: 30px 0;
+}
+
+.pagination {
+	display: block;
+	margin-bottom: 100px;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin: 10px;
+	}
+}

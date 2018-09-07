@@ -1,0 +1,40 @@
+// FONT STACKS
+
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: Georgia, "Times New Roman", Times, serif;
+$cursive: "Brush Script MT", cursive;
+$monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+
+//custom font stacks
+$mainFont: 'Nunito', sans-serif;
+
+/* SET BASE FONTS FOR PXTO EM */
+$base-font: 16px;
+$buttonfont: 0px;
+
+/* MEDIA QUERIES */
+$large-mobile: 370px;
+$tablet: 760px;
+$desktop: 1020px;
+$large-desktop: 1200px;
+$xxl-desktop: 1500px;
+
+$wrapper-size: 800px;
+
+/* MAIN COLOURS */
+$bodycolour: #fffff9;
+$blue: #2f6690;
+$darkBlue: #2e4057;
+$red: #e85d75;
+$green: #49beaa;
+$lightGreen: #40f99b;
+$yellow: #e8c547;
+$white: #ffffff;
+$bodycolour: #f3f4f5;
+$violet: #7d53de;
+$silver: #818b96;
+$grey: #61707d;
+$dark: #30323d;
+$lightHighlight: #eafffd;
+
+$transition: cubic-bezier(0.12, 0.84, 0.12, 0.84);

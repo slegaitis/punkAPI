@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render 1`] = `
+<header
+  id="page-header"
+>
+  <div
+    className="wrapper"
+  >
+    <h1>
+      Glofox Test
+    </h1>
+  </div>
+</header>
+`;

@@ -1,0 +1,19 @@
+/* SET BASE FONTS FOR PXTO EM */
+/* MEDIA QUERIES */
+/* MAIN COLOURS */
+.list-item {
+  background: #ffffff;
+  list-style: none;
+  margin: 10px 0;
+  padding: 15px; }
+  .list-item img {
+    display: inline-block;
+    margin: 10px;
+    max-height: 75px;
+    max-width: 30px;
+    vertical-align: middle; }
+  .list-item .description {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+    width: calc(100% - 70px); }

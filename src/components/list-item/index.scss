@@ -1,0 +1,23 @@
+@import "../../css/_imports.scss";
+
+.list-item {
+	background: $white;
+	list-style: none;
+	margin: 10px 0;
+	padding: 15px;
+
+	img {
+		display: inline-block;
+		margin: 10px;
+		max-height: 75px;
+		max-width: 30px;
+		vertical-align: middle;
+	}
+
+	.description {
+		display: inline-block;
+		margin: 10px;
+		vertical-align: middle;
+		width: calc(100% - 70px);
+	}
+}

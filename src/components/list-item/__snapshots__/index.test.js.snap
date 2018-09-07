@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Item component should render 1`] = `
+<li
+  className="list-item"
+>
+  <img
+    alt="Buzz"
+    src="https://images.punkapi.com/v2/keg.png"
+  />
+  <div
+    className="description"
+  >
+    <h4>
+      Buzz
+    </h4>
+    <p>
+      BrewDog vs. Weihenstephan India Pale Weizen kicked off a new direction for our collaborations. We to
+      ...
+    </p>
+  </div>
+</li>
+`;

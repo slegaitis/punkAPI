@@ -1,0 +1,16 @@
+// convert px to em - hurray! 
+
+@function toem($fontsize, $basesize: $base-font) {
+   @return ($fontsize / $basesize) * 1em;
+}
+
+// e.g. 
+
+// $base-font: 16px;
+
+// h1 {
+//	font-size: toem(24px); // outputs 1.5em;
+// }
+
+// If a class is a child of another element that has already had a font-size (e.g. 18px) set as ems to calculate the required size (24px) you calculate this as follows:
+// font-size: toem(24px, 18px);

@@ -1,0 +1,47 @@
+/* SET BASE FONTS FOR PXTO EM */
+/* MEDIA QUERIES */
+/* MAIN COLOURS */
+.featured-beer {
+  border-bottom: 1px solid #e5e7e9;
+  margin: 0 auto 20px;
+  max-width: 400px;
+  padding: 20px 10px;
+  text-align: center; }
+  .featured-beer h3 {
+    margin: 0 0 10px;
+    text-align: left; }
+  .featured-beer img {
+    display: inline-block;
+    margin: 30px;
+    max-width: 100px;
+    max-height: 150px;
+    vertical-align: middle; }
+  .featured-beer p {
+    display: inline-block;
+    font: 400 0.9375em "Nunito", sans-serif;
+    margin-left: 10px;
+    text-align: left;
+    vertical-align: middle;
+    width: calc(100% - 110px); }
+  @media only screen and (min-width: 760px) {
+    .featured-beer {
+      *zoom: 1;
+      max-width: 800px;
+      padding: 30px 20px;
+      text-align: left; }
+      .featured-beer:before, .featured-beer:after {
+        content: "";
+        display: table; }
+      .featured-beer:after {
+        clear: both; }
+      .featured-beer > h3,
+      .featured-beer img,
+      .featured-beer p {
+        display: inline-block;
+        vertical-align: middle; }
+      .featured-beer h3 {
+        width: 100%; }
+      .featured-beer img {
+        max-width: 200px; }
+      .featured-beer p {
+        width: calc(100% - 210px); } }
