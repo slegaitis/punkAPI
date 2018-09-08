@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './index.css';
 import { Provider } from 'react-redux';
 import reduxStore from '../../redux/store';
@@ -7,18 +7,16 @@ import reduxStore from '../../redux/store';
 import RandomBeer from '../random-beer';
 import Search from '../search';
 
-class Homepage extends Component {
-	render() {
-		return (
-			<Provider store={reduxStore}>
-				<div className="glofox-app">
-					<RandomBeer />
+const Homepage = () => {
+	return (
+		<Provider store={reduxStore}>
+			<div className="glofox-app">
+				<RandomBeer />
 
-					<Search />
-				</div>
-			</Provider>
-		);
-	}
-}
+				<Search />
+			</div>
+		</Provider>
+	);
+};
 
 export default Homepage;

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { fetchRandomBeer, fetchNonAlcoholicRandomBeer } from '../../redux/actions/beer-actions';
 
 class RandomBeer extends Component {
-	componentWillMount() {
+	componentDidMount() {
 		this.props.fetchRandomBeer();
 	}
 
