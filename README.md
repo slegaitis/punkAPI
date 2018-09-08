@@ -12,3 +12,4 @@ Some of the things i didn't have time for:
 3) Never pull same beer (in random section)
 4) Better tests :) 
 5) 1 Of tests fails now because of Redux and async actions, didn't have enough time to fix it (Test fails because of jest set up not app being broken)
+6) Loading indication and some animations
