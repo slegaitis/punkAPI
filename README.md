@@ -1,4 +1,6 @@
-Glofox Test by T Slegaitis
+Simple PunkAPI app by T Slegaitis
+
+Built with React and Redux
 
 To run:
 1) Clone / Fork repo
