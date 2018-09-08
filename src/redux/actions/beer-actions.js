@@ -12,6 +12,7 @@ export const fetchRandomBeer = () => (dispatch) => {
 		});
 };
 
+// fetch non alcoholic random beer and dispatch to redux
 export const fetchNonAlcoholicRandomBeer = () => (dispatch) => {
 	Api.GetRandomNonAlcoholic()
 		.then((beer) => {
@@ -22,6 +23,7 @@ export const fetchNonAlcoholicRandomBeer = () => (dispatch) => {
 		});
 };
 
+// fetch full list of beers
 export const fetchBeerList = (page, search_term) => (dispatch) => {
 	Api.GetBeerList(page, search_term)
 		.then((res) => {
@@ -32,6 +34,7 @@ export const fetchBeerList = (page, search_term) => (dispatch) => {
 		});
 };
 
+// fetch full list of beers based on description and dispatch to redux
 export const fetchBeerListByDescription = (page, search_term) => (dispatch) => {
 	Api.GetBeerListByDescription(page, search_term)
 		.then((res) => {
